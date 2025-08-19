@@ -1,0 +1,70 @@
+---
+// Feature Cards grid Section
+// ------------
+// Description: A grid of cards with feature information in a 4 column layout.
+
+// Components
+// - Layout
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+// - UI
+import Card from '../../ui/cards/FeatureCard.astro'
+
+// Content
+// - Cards
+import feature01 from '../../../assets/cards/feature-01.svg'
+import feature02 from '../../../assets/cards/feature-02.svg'
+import feature03 from '../../../assets/cards/feature-03.svg'
+import feature04 from '../../../assets/cards/feature-04.svg'
+import feature05 from '../../../assets/cards/feature-05.svg'
+---
+
+<Section id="features">
+	<Row>
+		<Col span="12" align="center" classes="mb-12 max-w-4xl mx-auto">
+			<h2 class="text-pretty">Sparkling Clean Homes and Offices, <strong>Every</strong> Time</h2>
+			<p class="pb-0 text-lg">
+				Experience the difference with Champion Maid Service. Our team provides thorough, reliable cleaning services for both residential and commercial spaces, leaving your property spotless and fresh.
+			</p>
+		</Col>
+	</Row>
+	<!--<Row>
+		<Col span="4">
+			<Card
+				title="Residential Cleaning"
+				subtitle="Keep your home shining with our detailed room-by-room cleaning services. From kitchens to bathrooms, we make every corner sparkle."
+				image={feature01}
+				link="/features"
+			/>
+		</Col>
+		<Col span="4" classes="flex flex-col gap-6">
+			<Card
+				title="Commercial Cleaning"
+				subtitle="Make a great impression with a clean, professional workspace. Our team handles offices, retail spaces, and more with precision and care."
+				image={feature02}
+				link="/features"
+			/>
+			<Card
+				title="Flexible Scheduling"
+				subtitle="Choose a cleaning schedule that works for you. Daily, weekly, or one-time deep cleans—we fit your needs."
+				image={feature03}
+				link="/features"
+			/>
+		</Col>
+		<Col span="4" classes="flex flex-col gap-6">
+			<Card
+				title="Eco-Friendly Products"
+				subtitle="We use safe, eco-conscious cleaning products that protect your family, employees, and the environment."
+				image={feature04}
+				link="/features"
+			/>
+			<Card
+				title="Trusted Professionals"
+				subtitle="Our trained and background-checked cleaning experts provide reliable, consistent service every time."
+				image={feature05}
+				link="/features"
+			/>
+		</Col>
+	</Row> -->
+</Section>

@@ -1,0 +1,54 @@
+---
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import Hero from '../components/blocks/hero/PageHeader.astro'
+import FAQ from '../components/blocks/FAQ/FaqSticky.astro'
+import TextImage from '../components/blocks/basic/TextImage.astro'
+import CTA from '../components/blocks/CTA/BasicDark.astro'
+
+// Data
+import faqData from '../data/json-files/faqData.json'
+// - FAQ Categories
+const faqPricing = faqData.filter((faq) => faq.category === 'pricing')
+const faqGeneral = faqData.filter((faq) => faq.category === 'general')
+
+// Content
+import faqImage1 from '../assets/faq/faq-01.jpg'
+// - SEO
+const SEO = {
+	title: 'Champion Maid Service | Frequently Asked Questions',
+	description:
+		'Find answers to all your questions about our residential and commercial cleaning services, pricing, scheduling, and more. Learn how Champion Maid Service can make your home or business sparkle with ease.'
+}
+// - Page Header
+const header = {
+	title: '<strong>Frequently Asked</strong> Questions.',
+	text: 'Find answers to your common questions about Champion Maid Service '
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Hero title={header.title} text={header.text} />
+	<FAQ
+		title="Services Made Simple"
+		text="Learn more about how Champion Maid Service works, what we can do for you, and how we make keeping your space spotless, and as stress-free as possible!"
+		data={faqGeneral}
+	/>
+	<FAQ
+		title="Understanding Our Cleaning Prices"
+		text="We believe a clean space should be easy and affordable. At Champion Maid Service, we’re upfront about our prices, offer special discounts, and can tailor a cleaning plan just for you. Whether you need a one-time deep clean or regular upkeep, we’ll find the perfect fit for your home or business (and your budget)."
+		data={faqPricing}
+	/>
+	<TextImage
+		title="Why Champion Maid Service Is Worth It"
+		text="A clean space is about more than appearances — it’s about comfort, focus, and peace of mind. Our services are built to bring lasting value at a fair price. From a quick refresh before guests arrive to a seasonal deep clean or ongoing maintenance, every visit is handled with care so your home or business always feels its best."
+		image={faqImage1}
+		mobileImage={faqImage1}
+		imagePosition="left"
+		offsetImage
+		classes="bg-neutral-50 dark:bg-neutral-900"
+	/>
+	<!--<CTA />-->
+</Layout>

@@ -1,0 +1,86 @@
+---
+// Highlights Section
+// ------------
+// Description: A section with a multiple text and image rows.
+
+// Components
+// - UI
+import TextImage from '../basic/TextImage.astro'
+
+// Content
+import highlight01 from '../../../assets/highlights/highlight-01.svg'
+import highlight01mobile from '../../../assets/highlights/highlight-01-mobile.svg'
+import highlight02 from '../../../assets/highlights/highlight-02.svg'
+import highlight02mobile from '../../../assets/highlights/highlight-02-mobile.svg'
+import highlight03 from '../../../assets/highlights/highlight-03.svg'
+import highlight03mobile from '../../../assets/highlights/highlight-03-mobile.svg'
+import highlight04 from '../../../assets/highlights/highlight-04.svg'
+import highlight04mobile from '../../../assets/highlights/highlight-04-mobile.svg'
+
+type HighlightBlock = {
+	title: string
+	text: string
+	image: any
+	mobileImage?: any
+	imageWidth: number
+	imageHeight: number
+	imagePosition: 'left' | 'right'
+}
+
+const HIGHLIGHT_PROPORTIONAL_SIZE: number = 250;
+
+const highlightBlocks: HighlightBlock[] = [
+	{
+		title: 'Trusted, <strong>Experienced</strong> Team',
+		text: 'Our professional cleaners are fully trained and background-checked. We bring care and attention to every home and office we service, so you can relax knowing your space is in safe hands.',
+		image: highlight01,
+		imageWidth: HIGHLIGHT_PROPORTIONAL_SIZE,
+		imageHeight: HIGHLIGHT_PROPORTIONAL_SIZE,
+		mobileImage: highlight01mobile,
+		imagePosition: 'right'
+	},
+	{
+		title: '<strong>Eco-Friendly</strong> Cleaning',
+		text: 'We use environmentally friendly products that are safe for your family, pets, and employees. Our green cleaning approach leaves your space spotless without harsh chemicals.',
+		image: highlight02,
+		mobileImage: highlight02mobile,
+		imageWidth: HIGHLIGHT_PROPORTIONAL_SIZE,
+		imageHeight: HIGHLIGHT_PROPORTIONAL_SIZE,
+		imagePosition: 'left'
+	},
+	{
+		title: '<strong>Flexible</strong> Scheduling',
+		text: 'Whether you need a one-time deep clean or recurring service, we work around your schedule. Choose the times that suit you best, and we’ll handle the rest.',
+		image: highlight03,
+		mobileImage: highlight03mobile,
+		imageWidth: HIGHLIGHT_PROPORTIONAL_SIZE,
+		imageHeight: HIGHLIGHT_PROPORTIONAL_SIZE,
+		imagePosition: 'right'
+	},
+	{
+		title: 'Satisfaction <strong>Guaranteed</strong>',
+		text: 'Your happiness is our priority. If you’re not completely satisfied with our cleaning, we’ll make it right at no extra cost. That’s our promise to you.',
+		image: highlight04,
+		mobileImage: highlight04mobile,
+		imageWidth: HIGHLIGHT_PROPORTIONAL_SIZE,
+		imageHeight: HIGHLIGHT_PROPORTIONAL_SIZE,
+		imagePosition: 'left'
+	},
+]
+---
+
+{
+	highlightBlocks.map((highlight, key) => (
+		<TextImage
+			id={`highlight-${key}`}
+			title={highlight.title}
+			text={highlight.text}
+			image={highlight.image}
+			imageWidth={highlight.imageWidth}
+			imageHeight={highlight.imageHeight}
+			mobileImage={highlight.mobileImage}
+			imagePosition={highlight.imagePosition}
+			classes={}
+		/>
+	))
+}

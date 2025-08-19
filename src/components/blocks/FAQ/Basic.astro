@@ -1,0 +1,68 @@
+---
+// Basic FAQ section
+// ------------
+// Description: A section that contains a list of frequently asked questions with answers.
+
+// Components
+// - Layout
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+// - UI
+import Accordion from '../../ui/Accordion.astro'
+import Card from '../../ui/cards/partials/Card.astro'
+
+// Props
+type Props = {
+	classes?: string
+}
+const { classes } = Astro.props
+---
+
+<Section id="FAQ" classes={classes}>
+	<Row>
+		<Col span="12" align="center" classes="mb-12 max-w-4xl mx-auto">
+			<h2 class="text-pretty">
+				Common Questions About <strong>Our Service Prices</strong>
+			</h2>
+			<p class="text-lg leading-relaxed">
+				Curious about our pricing plans? We’re here to help. Here are answers to some of the most frequently asked questions about our pricing options.
+			</p>
+		</Col>
+		<Col span="2" />
+		<Col span="8">
+			<Card classes="divide-y divide-neutral-100 dark:divide-neutral-800">
+				<Accordion
+					title="How much does a cleaning cost?"
+					text="Our pricing depends on the size of your home or business, the type of cleaning, and the frequency you choose. To get an accurate estimate, please contact us directly and we’ll provide a personalized quote."
+				/>
+				<Accordion
+					title="Can I change my cleaning plan later?"
+					text="Yes, you can upgrade, downgrade, or adjust your cleaning plan at any time. Just reach out to us and we’ll make the necessary changes so your plan fits your needs and schedule."
+				/>
+				<Accordion
+					title="Are there any hidden fees?"
+					text="No. We believe in transparent pricing. The price quoted is the price you pay."
+				/>
+				<Accordion
+					title="What payment methods are accepted?"
+					text="We accept major credit cards, debit cards, and online payment options. Invoicing is also available for commercial accounts."
+				/>
+				<Accordion
+					title="Do you offer discounts for regular or annual services?"
+					text="Yes. Customers who schedule recurring cleanings or annual plans can receive special discounts tailored to their plan."
+				/>
+			</Card>
+		</Col>
+		<Col span="2" />
+	</Row>
+</Section>
+
+<style>
+	.page-header {
+		@apply mx-auto max-w-3xl;
+	}
+	.page-header__text {
+		@apply text-lg leading-relaxed;
+	}
+</style>

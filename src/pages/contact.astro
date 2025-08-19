@@ -1,0 +1,35 @@
+---
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import FormHero from '../components/blocks/hero/ContactHero.astro'
+import CTA from '../components/blocks/CTA/BasicDark.astro'
+import ContactCards from '../components/blocks/contact/ContactCards.astro'
+import SocialProof from '../components/blocks/socialproof/Basic.astro'
+
+// Content
+// - SEO
+const SEO = {
+	title: 'Champion Maid Service | Get in Touch With Us',
+	description:
+		'Have questions or need assistance? Contact Champion Maid Service today for general support, inquiries, and feedback. Our team is here to help!'
+}
+// - Page Header
+const header = {
+	title: 'Reach out <strong>Today</strong>!',
+	text: "Whether you have a question, general inquiries about our services, or just want to share your feedback, we're all ears. Reach out to us and we'll get back to you as soon as possible."
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<FormHero
+		title={header.title}
+		text={header.text}
+		id="contact"
+		classes="bg-neutral-50 dark:bg-neutral-950/80"
+	/>
+	<ContactCards classes="dark:bg-neutral-950/80" />
+	<!--<SocialProof classes="dark:bg-neutral-950/80" />
+	<CTA />-->
+</Layout>

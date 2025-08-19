@@ -1,0 +1,98 @@
+[
+	{
+		"question": "What is the cost of a standard home cleaning?",
+		"reply": "The standard home cleaning starts at [PRICE] per visit. This includes general cleaning of living areas, bedrooms, kitchens, and bathrooms. It’s perfect for regular upkeep or first-time customers.",
+		"category": "pricing",
+		"open": true
+	},
+	{
+		"question": "Are there any discounts for recurring services?",
+		"reply": "Yes! We offer discounts for weekly or bi-weekly recurring cleaning services. Regular customers save both time and money while keeping their space consistently spotless.",
+		"category": "pricing",
+		"open": false
+	},
+	{
+		"question": "Do you offer a free estimate?",
+		"reply": "Yes, we provide free, no-obligation estimates for both residential and commercial cleaning services. Our team will assess your space and give you a transparent quote.",
+		"category": "pricing",
+		"open": false
+	},
+	{
+		"question": "What is your cancellation policy?",
+		"reply": "You can reschedule or cancel a cleaning appointment up to 24 hours in advance. For recurring customers, you can adjust your schedule at any time with no penalties.",
+		"category": "pricing",
+		"open": false
+	},
+	{
+		"question": "Do you offer refunds?",
+		"reply": "We offer a 30-day money-back guarantee if you are not satisfied with our service. Simply contact our support team within 30 days of your purchase, and we'll process your refund.",
+		"category": "pricing",
+		"open": false
+	},
+	{
+		"question": "Do I need to be home during the cleaning?",
+		"reply": "Not at all — it’s totally up to you! Many of our clients give us a spare key or entry code so we can clean while they’re at work or out and about. Either way, we treat your home or business with the same care and respect as if it were our own.",
+		"category": "general",
+		"open": true
+	},
+	{
+		"question": "Do you bring your own cleaning supplies?",
+		"reply": "Yes, we bring all the professional-grade supplies and equipment needed to make your space shine. If you have a preferred product or are sensitive to certain cleaners, just let us know and we’ll be happy to accommodate.",
+		"category": "general",
+		"open": false
+	},
+	{
+		"question": "Can you handle special cleaning requests?",
+		"reply": "Absolutely. From scrubbing the inside of the oven to tackling post-renovation dust, we love going the extra mile. Just let us know ahead of time so we can schedule the extra care your space deserves.",
+		"category": "general",
+		"open": false
+	},
+	{
+		"question": "Do you clean both homes and businesses?",
+		"reply": "Yes, whether it’s your cozy living room or a busy office, we’ve got you covered. Our team is trained for both residential and commercial spaces.",
+		"category": "general",
+		"open": false
+	},
+	{
+		"question": "What areas do you serve?",
+		"reply": "We proudly clean homes and businesses across Western New York. If you’re not sure whether we can reach your location, just ask and we’ll be happy to check.",
+		"category": "general",
+		"open": false
+	},
+	{
+		"question": "How often can you come?",
+		"reply": "We can clean as often as you’d like: weekly, biweekly, monthly, or just for special occasions. Your schedule is entirely your choice.",
+		"category": "general",
+		"open": false
+	},
+	{
+		"question": "What are the main features of Foxi?",
+		"reply": "Foxi includes in-app messaging, project management, time tracking, customizable dashboards, and more. These features are designed to help you stay organized, communicate effectively, and manage your time efficiently.",
+		"category": "features",
+		"open": true
+	},
+	{
+		"question": "How do I use the in-app messaging feature?",
+		"reply": "In-app messaging allows you to communicate with your team directly within Foxi. Simply navigate to the messaging tab to start a conversation. You can send messages, share files, and create group chats.",
+		"category": "features",
+		"open": false
+	},
+	{
+		"question": "Can I customize my dashboard?",
+		"reply": "Yes, you can customize your dashboard by adding, removing, and rearranging widgets to fit your workflow. This customization helps you keep important information at your fingertips.",
+		"category": "features",
+		"open": false
+	},
+	{
+		"question": "How does the time tracking feature work?",
+		"reply": "Time tracking allows you to log the time spent on tasks and projects. Start the timer when you begin a task and stop it when you're done. You can also manually log time if needed.",
+		"category": "features",
+		"open": false
+	},
+	{
+		"question": "Is there a mobile app for Foxi?",
+		"reply": "Yes, Foxi is available on both iOS and Android, allowing you to manage your tasks and projects on the go. Download the app from the App Store or Google Play to stay productive anywhere.",
+		"category": "features",
+		"open": false
+	}
+]

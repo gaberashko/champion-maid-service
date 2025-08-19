@@ -1,0 +1,77 @@
+---
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import Feature from '../components/blocks/features/FeatureSticky.astro'
+import Hero from '../components/blocks/hero/PageHeader.astro'
+import CTA from '../components/blocks/CTA/BasicDark.astro'
+import SidebarContent from '../components/blocks/basic/StickySidebar.astro'
+import ImageCarousel from '../components/blocks/basic/ImageCarousel.astro'
+
+// Data
+import featuresData from '../data/json-files/featuresData.json'
+// - Feature Categories
+const featuresFactors = featuresData.filter((feature) => feature.category === 'Factors')
+const featuresProductivity = featuresData.filter((feature) => feature.category === 'Productivity')
+const featuresSecurity = featuresData.filter((feature) => feature.category === 'Security')
+const featuresIntegrations = featuresData.filter((feature) => feature.category === 'Integrations')
+const featuresSupport = featuresData.filter((feature) => feature.category === 'Support')
+
+// Content
+// - SEO
+const SEO = {
+	title: 'Champion Maid Service | A Local Team With a Passion for Clean',
+	description:
+		"Champion Maid Service believes a clean space is the foundation of a better life. We take pride in serving the Western New york community with integrity, reliability, and attention to detail. Request an estimate today!"
+}
+// - Page Header
+const header = {
+	title: 'Welcome to <strong>Champion</strong> Maid Service',
+	text: 'More than just cleaning — we bring comfort, care, and peace of mind to every space we touch.'
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Hero title={header.title} text={header.text} />
+	<SidebarContent>
+		<div slot="sidebar">
+			<h3>Welcome</h3>
+			<p>
+				Take a moment to learn about who we are and how we bring care and quality to every home and business we serve.
+			</p>
+		</div>
+		<div class="basic-text">
+			<h4>Welcome to Champion Maid Service</h4>
+			<p>
+				Hello and welcome! I started Champion Maid Service because I know what it feels like to come home to a space that’s cluttered, stressful, or just plain overwhelming. Our mission is simple: to take that burden off your shoulders and leave your home or office feeling refreshed and cared for.
+			</p>
+			<p>
+				Every cleaning is done with attention, respect, and a personal touch. I know how much a clean space can change the way you feel—more relaxed, focused, and at peace. That’s the kind of environment we want to create for you.
+			</p>
+
+			<h4>Our Story</h4>
+			<p>
+				Starting this business was a leap of faith, but it came from a place of passion and perseverance. I understand the value of hard work and dedication, and I bring that to every home and business we serve. From routine cleanings to deeper refreshes, our services are designed to make your life a little easier and your surroundings a lot brighter.
+			</p>
+			<p>
+				Each client is important to me, and every space we care for is treated as if it were my own. I take pride in building trust, listening to your needs, and delivering results that genuinely make a difference.
+			</p>
+
+			<h4>Our Promise</h4>
+			<p>
+				At Champion Maid Service, you’re not just getting a cleaning—you’re getting a partner who values your space and your time. I promise to approach each visit with reliability, care, and a commitment to excellence. We work with you to create a plan that fits your schedule, your priorities, and your peace of mind.
+			</p>
+			<p>
+				Thank you for trusting us with your space. My goal is to make every visit feel like a little gift of calm and comfort, so you can focus on the things that matter most in your life.
+			</p>
+			<ImageCarousel/>
+		</div>
+	</SidebarContent>
+	<!--<Feature
+		title="Insightful Analytics"
+		text="Delve into your data with precision and uncover actionable insights."
+		data={featuresFactors}
+	/>-->
+	<!--<CTA />-->
+</Layout>

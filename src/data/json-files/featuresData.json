@@ -1,0 +1,236 @@
+[
+	{
+		"title": "Size and Layout",
+		"icon": "home",
+		"description": "The square footage and number of rooms affect the time and resources required. Larger homes or offices generally require more attention and may adjust the price accordingly.",
+		"category": "Factors"
+	},
+	{
+		"title": "Type of Cleainng",
+		"icon": "sparkles",
+		"description": "Routine housekeeping, deep cleaning, move-in/move-out services, or special requests all differ in scope. Each service type is priced based on the level of detail and effort involved.",
+		"category": "Factors"
+	},
+	{
+		"title": "Frequency of Service",
+		"icon": "calendar-check",
+		"description": "Regular cleaning plans, such as weekly or bi-weekly visits, often qualify for discounted rates compared to one-time sessions.",
+		"category": "Factors"
+	},
+	{
+		"title": "Special Requirements",
+		"icon": "cog",
+		"description": "Additional tasks such as carpet treatment, window washing, or organizing can influence the estimate. We’ll adjust the plan to match your specific needs.",
+		"category": "Factors"
+	},
+	{
+		"title": "Commercial vs. Residential",
+		"icon": "office",
+		"description": "Businesses may require different staffing, equipment, or scheduling than homes, which can affect pricing.",
+		"category": "Factors"
+	},
+	{
+		"title": "Condition of the Space",
+		"icon": "broom",
+		"description": "Homes or offices that haven’t been cleaned in a while, or require extra attention due to clutter, pets, or heavy use, may need additional time and resources.",
+		"category": "Factors"
+	},
+		{
+		"title": "Scheduling and Timing",
+		"icon": "clock",
+		"description": "The day, time, and urgency of your cleaning appointment can affect pricing. Evening, weekend, or last-minute requests may require a higher rate.",
+		"category": "Factors"
+	},
+		{
+		"title": "How to Get an Estimate",
+		"icon": "chat-bubble-left-ellipsis",
+		"description": "The best way to receive an accurate price is to contact us directly. We’ll discuss your needs, evaluate your space if necessary, and provide a customized estimate that fits your budget and schedule.",
+		"category": "Factors"
+	},
+	{
+		"title": "Task Management",
+		"icon": "cliboard-document-check",
+		"description": "Efficiently manage tasks and projects with Foxi's intuitive task management tools. Assign, track progress, and collaborate seamlessly.",
+		"category": "Productivity"
+	},
+	{
+		"title": "Third-Party Apps",
+		"icon": "rocket",
+		"description": "Connect Foxi with your favorite tools and apps effortlessly. Streamline workflows and enhance productivity with seamless integrations.",
+		"category": "Productivity"
+	},
+	{
+		"title": "Mobile Accessibility",
+		"icon": "device-phone-mobile",
+		"description": "Stay productive on the go with Foxi's mobile app. Access key features, collaborate with your team, and manage tasks anytime, anywhere.",
+		"category": "Support"
+	},
+	{
+		"title": "Dedicated Customer Support",
+		"icon": "trophy",
+		"description": "Receive exceptional customer support whenever you need it. Our dedicated team is here 24/7 to assist you with any questions or issues.",
+		"category": "Support"
+	},
+	{
+		"title": "Robust Data Security",
+		"icon": "shield-check",
+		"description": "Rest assured knowing your data is safe with Foxi's robust security measures. We employ industry-standard protocols to protect your information.",
+		"category": "Security"
+	},
+	{
+		"title": "Scalability",
+		"icon": "arrow-treding-up",
+		"description": "Grow your business with confidence using Foxi's scalable platform. Whether you're a startup or a large enterprise, our solution adapts to your needs.",
+		"category": "Security"
+	},
+	{
+		"title": "Real-Time Notifications",
+		"icon": "bell-alert",
+		"description": "Stay updated with real-time notifications for important events and updates. Never miss out on critical information with instant alerts.",
+		"category": "Security"
+	},
+	{
+		"title": "Team Collaboration Tools",
+		"icon": "user-group",
+		"description": "Enhance team collaboration with tools designed for effective communication and project management. Share updates, files, and feedback seamlessly.",
+		"category": "Productivity"
+	},
+	{
+		"title": "In-App Messaging",
+		"icon": "chat-bubble-left-right",
+		"description": "Communicate directly within the app using in-app messaging. Keep conversations organized and accessible without switching between tools.",
+		"category": "Integrations"
+	},
+	{
+		"title": "Multi-Device Sync",
+		"icon": "computer-desktop",
+		"description": "Ensure seamless access to your data across all devices. Sync your information in real-time, so you can work from anywhere with consistency.",
+		"category": "Support"
+	},
+	{
+		"title": "Customizable Alerts",
+		"icon": "bell",
+		"description": "Set up customizable alerts to notify you of important events and changes. Tailor notifications to your needs for better management and response.",
+		"category": "Support"
+	},
+	{
+		"title": "API Integrations",
+		"icon": "arrow-path-rounded-square",
+		"description": "Integrate with other systems and services using our flexible API. Expand functionality and connect with external tools effortlessly.",
+		"category": "Integrations"
+	},
+	{
+		"title": "User Role Management",
+		"icon": "user",
+		"description": "Manage user roles and permissions with ease. Control access levels and ensure the right people have the right permissions for your project.",
+		"category": "Security"
+	},
+	{
+		"title": "Data Backup",
+		"icon": "circle-stack",
+		"description": "Protect your data with regular backups. Ensure that your information is safe and recoverable in case of unexpected issues or data loss.",
+		"category": "Security"
+	},
+	{
+		"title": "Interactive Tutorials",
+		"icon": "document-chart-bar",
+		"description": "Access interactive tutorials to get the most out of our features. Learn new skills and improve your proficiency with guided, hands-on experiences.",
+		"category": "Support"
+	},
+	{
+		"title": "Integration Marketplace",
+		"icon": "shopping-cart",
+		"description": "Explore our marketplace for additional integrations and plugins. Extend the functionality of your platform with third-party solutions.",
+		"category": "Integrations"
+	},
+	{
+		"title": "Onboarding Assistance",
+		"icon": "user",
+		"description": "Get personalized onboarding assistance to help you set up and start using our platform effectively. Benefit from expert guidance to ensure a smooth start.",
+		"category": "Support"
+	},
+	{
+		"title": "Knowledge Base",
+		"icon": "document-text",
+		"description": "Access a comprehensive knowledge base with articles, guides, and FAQs. Find answers to common questions and learn how to make the most of our features.",
+		"category": "Support"
+	},
+	{
+		"title": "Live Chat Support",
+		"icon": "chat-bubble-left-ellipsis",
+		"description": "Connect with our support team via live chat for immediate assistance. Get answers to your questions and resolve issues in real time.",
+		"category": "Support"
+	},
+	{
+		"title": "Customizable Workspaces",
+		"icon": "cursor-arrow-ripple",
+		"description": "Personalize your workspace layout to fit your needs. Adjust and configure your workspace for maximum efficiency and comfort.",
+		"category": "Productivity"
+	},
+	{
+		"title": "Task Automation",
+		"icon": "rectangle-stack",
+		"description": "Automate routine tasks to improve efficiency and reduce manual work. Set up automated processes to streamline your workflow.",
+		"category": "Productivity"
+	},
+	{
+		"title": "Accessibility Features",
+		"icon": "eye-slash",
+		"description": "Explore features designed to enhance accessibility. Ensure your tools and workspace are usable for all team members, including those with disabilities.",
+		"category": "Security"
+	},
+	{
+		"title": "Enhanced Mobile Access",
+		"icon": "mobile",
+		"description": "Benefit from enhanced mobile access features. Use our app to stay connected and productive with improved functionality on mobile devices.",
+		"category": "Security"
+	},
+	{
+		"title": "Advanced Bug Tracking",
+		"icon": "bug-ant",
+		"description": "Track tasks and projects with advanced tracking features. Monitor progress, set milestones, and manage your projects more effectively.",
+		"category": "Productivity"
+	},
+	{
+		"title": "Comprehensive Balancer",
+		"icon": "scale",
+		"description": "Access comprehensive support resources to assist users at all levels. From troubleshooting to advanced tips, get the help you need.",
+		"category": "Support"
+	},
+	{
+		"title": "Voice Recordings",
+		"icon": "microphone",
+		"description": "Receive real-time updates on accessibility features and improvements. Stay informed about changes that impact your mobile and web access.",
+		"category": "Support"
+	},
+	{
+		"title": "User Identity Verification",
+		"icon": "identification",
+		"description": "Analyze productivity metrics to optimize performance. Gain insights into team and individual productivity to drive improvements.",
+		"category": "Productivity"
+	},
+	{
+		"title": "Payment Integrations",
+		"icon": "credit-card",
+		"description": "Communicate directly within the app using in-app messaging. Keep conversations organized and accessible without switching between tools.",
+		"category": "Integrations"
+	},
+	{
+		"title": "Transparent API ",
+		"icon": "cube-transparent",
+		"description": "Seamlessly integrate with third-party APIs to extend the functionality of your app. Enjoy smooth data exchange and enhanced performance.",
+		"category": "Integrations"
+	},
+	{
+		"title": "Clever CRM Integration",
+		"icon": "light-bulb",
+		"description": "Connect your app with popular CRM systems to streamline customer management. Synchronize data and improve customer relationship processes.",
+		"category": "Integrations"
+	},
+	{
+		"title": "API key Integration",
+		"icon": "key",
+		"description": "Integrate multiple payment gateways to offer diverse payment options. Ensure secure transactions and smooth payment processing for users.",
+		"category": "Integrations"
+	}
+]
