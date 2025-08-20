@@ -39,7 +39,7 @@ export const footerNavigationData: FooterData = {
 		aboutText:
 			'Champion Maid Service is a locally owned cleaning company serving Western New York. We take pride in delivering reliable, friendly, and professional cleaning services that make your home sparkle and your life a little easier.',
 		logo: {
-			src: 'logo.svg',
+			src: `${import.meta.env.BASE_URL}logo.svg`,
 			alt: 'The tailwind astro theme',
 			text: 'Champion Maid Service'
 		}
@@ -75,7 +75,7 @@ export const footerNavigationData: FooterData = {
 			subCategories: [
 				{
 					subCategory: 'About us',
-					subCategoryLink: '/'
+					subCategoryLink: `${import.meta.env.BASE_URL}about`
 				},
 				{
 					subCategory: 'News',
