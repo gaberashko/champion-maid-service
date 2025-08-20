@@ -1,27 +1,34 @@
 ---
-import { initCarousel } from `../../scripts/carousel.ts`;
+import { initCarousel } from `./carousel.ts`;
+
+const images = [ 
+    `${import.meta.env.BASE_URL}about/before1.jpg`,
+    `${import.meta.env.BASE_URL}about/after1.jpg`,
+    `${import.meta.env.BASE_URL}about/before2.jpg`,
+    `${import.meta.env.BASE_URL}about/after2.jpg`,
+    `${import.meta.env.BASE_URL}about/before3.jpg`,
+    `${import.meta.env.BASE_URL}about/after3_1.jpg`,
+    `${import.meta.env.BASE_URL}about/after3_2.jpg`,
+    `${import.meta.env.BASE_URL}about/before4_1.jpg`,
+    `${import.meta.env.BASE_URL}about/before4_2.jpg`,
+    `${import.meta.env.BASE_URL}about/before4_3.jpg`,
+    `${import.meta.env.BASE_URL}about/before4_4.jpg`,
+    `${import.meta.env.BASE_URL}about/after4_1.jpg`,
+    `${import.meta.env.BASE_URL}about/after4_2.jpg`,
+    `${import.meta.env.BASE_URL}about/after4_3.jpg`,
+    `${import.meta.env.BASE_URL}about/after4_4.jpg`,
+]
 ---
 <!-- Component: Carousel with controls outside -->
 <div class="relative w-full glide-04 flex flex-col justify-center items-center">
     <!-- Slides -->
     <div class="overflow-hidden w-full max-w-[800px]" data-glide-el="track">
         <ul class="relative overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
-            <li><img src=`${import.meta.env.BASE_URL}about/before1.jpg` class="w-auto max-w-full max-h-full m-auto" /></li>
-            <li><img src=`${import.meta.env.BASE_URL}about/after1.jpg` class="w-auto max-w-full max-h-full m-auto" /></li>
-            <li><img src=`${import.meta.env.BASE_URL}about/before2.jpg` class="w-auto max-w-full max-h-full m-auto" /></li>
-            <li><img src=`${import.meta.env.BASE_URL}about/after2.jpg` class="w-auto max-w-full max-h-full m-auto" /></li>
-            <li><img src=`${import.meta.env.BASE_URL}about/before3.jpg` class="w-auto max-w-full max-h-full m-auto" /></li>
-            <li><img src=`${import.meta.env.BASE_URL}about/after3_1.jpg` class="w-auto max-w-full max-h-full m-auto" /></li>
-            <li><img src=`${import.meta.env.BASE_URL}about/after3_2.jpg` class="w-auto max-w-full max-h-full m-auto" /></li>
-            <li><img src=`${import.meta.env.BASE_URL}about/before4_1.jpg` class="w-auto max-w-full max-h-full m-auto" /></li>
-            <li><img src=`${import.meta.env.BASE_URL}about/before4_2.jpg` class="w-auto max-w-full max-h-full m-auto" /></li>
-            <li><img src=`${import.meta.env.BASE_URL}about/before4_3.jpg` class="w-auto max-w-full max-h-full m-auto" /></li>
-            <li><img src=`${import.meta.env.BASE_URL}about/before4_4.jpg` class="w-auto max-w-full max-h-full m-auto" /></li>
-            <li><img src=`${import.meta.env.BASE_URL}about/after4_1.jpg` class="w-auto max-w-full max-h-full m-auto" /></li>
-            <li><img src=`${import.meta.env.BASE_URL}about/after4_2.jpg` class="w-auto max-w-full max-h-full m-auto" /></li>
-            <li><img src=`${import.meta.env.BASE_URL}about/after4_3.jpg` class="w-auto max-w-full max-h-full m-auto" /></li>
-            <li><img src=`${import.meta.env.BASE_URL}about/after4_4.jpg` class="w-auto max-w-full max-h-full m-auto" /></li>
-            
+            {images.map((src) => (
+                <li>
+                    <img src={`${import.meta.env.BASE_URL}${src}` }class="w-auto max-w-full max-h-full m-auto" />
+                </li>
+            ))}
         </ul>
     </div>
     <!-- Controls -->
@@ -41,9 +48,10 @@ import { initCarousel } from `../../scripts/carousel.ts`;
     </div>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
 
-<script type="module" is:inline>
-    import { initCarousel } from `./carousel.ts`;
+<script type="module">
+    import { initCarousel } from "../../scripts/carousel.ts";
     initCarousel(`.glide-04`);
 </script>
 <!-- End Carousel with controls outside -->
