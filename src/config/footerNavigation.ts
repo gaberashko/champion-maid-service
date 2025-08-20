@@ -59,15 +59,15 @@ export const footerNavigationData: FooterData = {
 				{
 					subCategory: 'Pricing',
 					subCategoryLink: `${import.meta.env.BASE_URL}pricing`
-				},
-				{
+				}
+				/*{
 					subCategory: 'Changelog',
 					subCategoryLink: `${import.meta.env.BASE_URL}changelog`
 				},
 				{
 					subCategory: 'Terms',
 					subCategoryLink: `${import.meta.env.BASE_URL}terms`
-				}
+				}*/
 			]
 		},
 		{
@@ -76,15 +76,15 @@ export const footerNavigationData: FooterData = {
 				{
 					subCategory: 'About us',
 					subCategoryLink: `${import.meta.env.BASE_URL}about`
-				},
-				{
+				}
+				/*{
 					subCategory: 'News',
 					subCategoryLink: `${import.meta.env.BASE_URL}blog`
 				},
 				{
 					subCategory: 'Careers',
 					subCategoryLink: `${import.meta.env.BASE_URL}blog`
-				}
+				}*/
 			]
 		},
 		{
