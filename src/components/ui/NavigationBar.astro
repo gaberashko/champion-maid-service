@@ -65,7 +65,7 @@ const savedNavActions = navActions.map((action) => ({
 						<li role="none" class="header__menu-item">
 							{!item.submenu ? (
 								<a
-									href={item.link}
+									href={`${import.meta.env.BASE_URL}${item.link.replace(/^\//, '')}`}
 									role="menuitem"
 									class={`header__menu-link ${isActivePath(item.link) ? 'active' : ''}`}
 								>

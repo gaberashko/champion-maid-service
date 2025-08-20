@@ -9,6 +9,7 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
     site: "https://gaberashko.github.io/champion-maid-service/",
     base: "/champion-maid-service/",
+    trailingSlash: "always",
     integrations: [
         tailwind(),
         icon(),
