@@ -1,55 +1,77 @@
 ---
-const images = [ 
-    `${import.meta.env.BASE_URL}about/before1.jpg`,
-    `${import.meta.env.BASE_URL}about/after1.jpg`,
-    `${import.meta.env.BASE_URL}about/before2.jpg`,
-    `${import.meta.env.BASE_URL}about/after2.jpg`,
-    `${import.meta.env.BASE_URL}about/before3.jpg`,
-    `${import.meta.env.BASE_URL}about/after3_1.jpg`,
-    `${import.meta.env.BASE_URL}about/after3_2.jpg`,
-    `${import.meta.env.BASE_URL}about/before4_1.jpg`,
-    `${import.meta.env.BASE_URL}about/before4_2.jpg`,
-    `${import.meta.env.BASE_URL}about/before4_3.jpg`,
-    `${import.meta.env.BASE_URL}about/before4_4.jpg`,
-    `${import.meta.env.BASE_URL}about/after4_1.jpg`,
-    `${import.meta.env.BASE_URL}about/after4_2.jpg`,
-    `${import.meta.env.BASE_URL}about/after4_3.jpg`,
-    `${import.meta.env.BASE_URL}about/after4_4.jpg`,
-]
+import "@glidejs/glide/dist/css/glide.core.min.css";
+import "@glidejs/glide/dist/css/glide.theme.min.css";
+
+const images = [
+  `${import.meta.env.BASE_URL}about/before1.jpg`,
+  `${import.meta.env.BASE_URL}about/after1.jpg`,
+  `${import.meta.env.BASE_URL}about/before2.jpg`,
+  `${import.meta.env.BASE_URL}about/after2.jpg`,
+  `${import.meta.env.BASE_URL}about/before3.jpg`,
+  `${import.meta.env.BASE_URL}about/after3_1.jpg`,
+  `${import.meta.env.BASE_URL}about/after3_2.jpg`,
+  `${import.meta.env.BASE_URL}about/before4_1.jpg`,
+  `${import.meta.env.BASE_URL}about/before4_2.jpg`,
+  `${import.meta.env.BASE_URL}about/before4_3.jpg`,
+  `${import.meta.env.BASE_URL}about/before4_4.jpg`,
+  `${import.meta.env.BASE_URL}about/after4_1.jpg`,
+  `${import.meta.env.BASE_URL}about/after4_2.jpg`,
+  `${import.meta.env.BASE_URL}about/after4_3.jpg`,
+  `${import.meta.env.BASE_URL}about/after4_4.jpg`,
+];
 ---
-<!-- Component: Carousel with controls outside -->
-<div class="relative w-full glide-04 flex flex-col justify-center items-center">
-    <!-- Slides -->
-    <div class="overflow-hidden w-full max-w-[800px]" data-glide-el="track">
-        <ul class="relative overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
-            {images.map((src) => (
-                <li>
-                    <img src={`${src}`}class="w-auto max-w-full max-h-full m-auto" />
-                </li>
-            ))}
-        </ul>
-    </div>
-    <!-- Controls -->
-    <div class="flex items-center justify-center w-full gap-2 p-4" data-glide-el="controls">
-        <button class="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full lg:w-12 lg:h-12 text-slate-700 border-slate-700 hover:text-slate-900 hover:border-slate-900 focus-visible:outline-none bg-white/20" data-glide-dir="<" aria-label="prev slide">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                <title>prev slide</title>
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
-            </svg>
-        </button>
-        <button class="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full lg:w-12 lg:h-12 text-slate-700 border-slate-700 hover:text-slate-900 hover:border-slate-900 focus-visible:outline-none bg-white/20" data-glide-dir=">" aria-label="next slide">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                <title>next slide</title>
-                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-            </svg>
-        </button>
-    </div>
+
+<!-- Keep the native Glide structure/classes -->
+<div class="glide glide-04 w-full flex flex-col items-center">
+  <div class="glide__track w-full max-w-[960px]" data-glide-el="track">
+    <ul class="glide__slides">
+      {images.map((src) => (
+        <li class="glide__slide">
+          <img src={src} alt="" class="block w-full h-auto object-contain" />
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  <div class="flex items-center justify-center w-full gap-2 p-4" data-glide-el="controls">
+    <button data-glide-dir="<"
+      class="inline-flex items-center justify-center w-8 h-8 lg:w-12 lg:h-12 border rounded-full">
+      ‹
+    </button>
+    <button data-glide-dir=">"
+      class="inline-flex items-center justify-center w-8 h-8 lg:w-12 lg:h-12 border rounded-full">
+      ›
+    </button>
+  </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
-
+<!-- Single inline module script using ESM from CDN -->
 <script type="module">
-    import { initCarousel } from "../../scripts/carousel.ts";
-    initCarousel(`.glide-04`);
+  import Glide from "https://cdn.jsdelivr.net/npm/@glidejs/glide@3.6.0/dist/glide.esm.min.js";
+
+  function mountGlide() {
+    const el = document.querySelector(".glide-04");
+    if (el && !el.dataset.glideMounted) {
+      const glide = new Glide(".glide-04", {
+        type: "carousel",
+        focusAt: "center",
+        perView: 4,
+        gap: 20,
+        autoplay: 3500,
+        animationDuration: 700,
+        breakpoints: {
+          1024: { perView: 3 },
+          640: { perView: 1 },
+        },
+      });
+      glide.mount();
+      el.dataset.glideMounted = "true"; // prevent double init
+    }
+  }
+
+  // Run on first page load
+  mountGlide();
+
+  // Run again after Astro navigates to this page
+  document.addEventListener("astro:page-load", mountGlide);
 </script>
-<!-- End Carousel with controls outside -->
