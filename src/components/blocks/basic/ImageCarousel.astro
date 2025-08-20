@@ -1,4 +1,5 @@
 ---
+import { initCarousel } from `../../scripts/carousel.ts`;
 ---
 <!-- Component: Carousel with controls outside -->
 <div class="relative w-full glide-04 flex flex-col justify-center items-center">
@@ -40,27 +41,9 @@
     </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
 
-<script is:inline>
-    import Glide from "@glidejs/glide";
-
-    const glide04 = new Glide(".glide-04", {
-    type: "carousel",
-    focusAt: "center",
-    perView: 4,
-    autoplay: 3500,
-    animationDuration: 700,
-    gap: 20,
-    classes: {
-        activeNav: "[&>*]:bg-slate-700",
-    },
-    breakpoints: {
-        1024: { perView: 4 },
-        640: { perView: 2 },
-    },
-    } as any);
-
-    glide04.mount();
+<script type="module" is:inline>
+    import { initCarousel } from `./carousel.ts`;
+    initCarousel(`.glide-04`);
 </script>
 <!-- End Carousel with controls outside -->
