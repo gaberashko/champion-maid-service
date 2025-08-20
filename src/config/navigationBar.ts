@@ -34,8 +34,8 @@ export interface NavData {
 export const navigationBarData: NavData = {
 	logo: {
 		src: '/logo.svg',
-		alt: 'Champion Maid Service logo.'
-		//text: 'Champion Maid Service'
+		alt: 'Champion Maid Service logo.',
+		text: 'Champion Maid Service'
 	},
 	navItems: [
 		{ name: 'Home', link: '/' },
