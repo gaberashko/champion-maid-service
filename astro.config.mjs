@@ -7,15 +7,16 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://foxi.netlify.app/",
-  integrations: [
-    tailwind(),
-    icon(),
-    sitemap(),
-    partytown({
-      config: {
-        forward: ["dataLayer.push"],
-      },
-    }),
-  ],
+    site: "https://gaberashko.github.io",
+    base: "/champion-maid-service",
+    integrations: [
+        tailwind(),
+        icon(),
+        sitemap(),
+        partytown({
+            config: {
+                forward: ["dataLayer.push"],
+            },
+        }),
+    ],
 });
