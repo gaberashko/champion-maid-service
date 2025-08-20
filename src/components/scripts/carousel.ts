@@ -1,7 +1,7 @@
 import Glide from '@glidejs/glide'
 
 export function initCarousel(selector: string) {
-	const glide = new Glide('selector', {
+	const glide = new Glide(selector, {
 		type: 'carousel',
 		focusAt: 'center',
 		perView: 4,

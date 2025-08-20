@@ -1,20 +1,20 @@
 ---
 const images = [ 
-    `${import.meta.env.BASE_URL}about/before1.jpg`,
-    `${import.meta.env.BASE_URL}about/after1.jpg`,
-    `${import.meta.env.BASE_URL}about/before2.jpg`,
-    `${import.meta.env.BASE_URL}about/after2.jpg`,
-    `${import.meta.env.BASE_URL}about/before3.jpg`,
-    `${import.meta.env.BASE_URL}about/after3_1.jpg`,
-    `${import.meta.env.BASE_URL}about/after3_2.jpg`,
-    `${import.meta.env.BASE_URL}about/before4_1.jpg`,
-    `${import.meta.env.BASE_URL}about/before4_2.jpg`,
-    `${import.meta.env.BASE_URL}about/before4_3.jpg`,
-    `${import.meta.env.BASE_URL}about/before4_4.jpg`,
-    `${import.meta.env.BASE_URL}about/after4_1.jpg`,
-    `${import.meta.env.BASE_URL}about/after4_2.jpg`,
-    `${import.meta.env.BASE_URL}about/after4_3.jpg`,
-    `${import.meta.env.BASE_URL}about/after4_4.jpg`,
+    `about/before1.jpg`,
+    `about/after1.jpg`,
+    `about/before2.jpg`,
+    `about/after2.jpg`,
+    `about/before3.jpg`,
+    `about/after3_1.jpg`,
+    `about/after3_2.jpg`,
+    `about/before4_1.jpg`,
+    `about/before4_2.jpg`,
+    `about/before4_3.jpg`,
+    `about/before4_4.jpg`,
+    `about/after4_1.jpg`,
+    `about/after4_2.jpg`,
+    `about/after4_3.jpg`,
+    `about/after4_4.jpg`,
 ]
 ---
 <!-- Component: Carousel with controls outside -->
@@ -24,7 +24,7 @@ const images = [
         <ul class="relative overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
             {images.map((src) => (
                 <li>
-                    <img src={`${import.meta.env.BASE_URL}${src}` }class="w-auto max-w-full max-h-full m-auto" />
+                    <img src={`${src}`}class="w-auto max-w-full max-h-full m-auto" />
                 </li>
             ))}
         </ul>
