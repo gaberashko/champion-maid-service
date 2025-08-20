@@ -39,7 +39,7 @@ export const footerNavigationData: FooterData = {
 		aboutText:
 			'Champion Maid Service is a locally owned cleaning company serving Western New York. We take pride in delivering reliable, friendly, and professional cleaning services that make your home sparkle and your life a little easier.',
 		logo: {
-			src: '../../public/logo.svg',
+			src: 'logo.svg',
 			alt: 'The tailwind astro theme',
 			text: 'Champion Maid Service'
 		}
@@ -50,23 +50,23 @@ export const footerNavigationData: FooterData = {
 			subCategories: [
 				{
 					subCategory: 'Features',
-					subCategoryLink: '/features'
+					subCategoryLink: `${import.meta.env.BASE_URL}features`
 				},
 				{
 					subCategory: 'FAQ',
-					subCategoryLink: '/faq'
+					subCategoryLink: `${import.meta.env.BASE_URL}faq`
 				},
 				{
 					subCategory: 'Pricing',
-					subCategoryLink: '/pricing'
+					subCategoryLink: `${import.meta.env.BASE_URL}pricing`
 				},
 				{
 					subCategory: 'Changelog',
-					subCategoryLink: '/changelog'
+					subCategoryLink: `${import.meta.env.BASE_URL}changelog`
 				},
 				{
 					subCategory: 'Terms',
-					subCategoryLink: '/terms'
+					subCategoryLink: `${import.meta.env.BASE_URL}terms`
 				}
 			]
 		},
@@ -79,11 +79,11 @@ export const footerNavigationData: FooterData = {
 				},
 				{
 					subCategory: 'News',
-					subCategoryLink: '/blog'
+					subCategoryLink: `${import.meta.env.BASE_URL}blog`
 				},
 				{
 					subCategory: 'Careers',
-					subCategoryLink: '/blog'
+					subCategoryLink: `${import.meta.env.BASE_URL}blog`
 				}
 			]
 		},
@@ -92,15 +92,15 @@ export const footerNavigationData: FooterData = {
 			subCategories: [
 				{
 					subCategory: 'Contact',
-					subCategoryLink: '/contact'
+					subCategoryLink: `${import.meta.env.BASE_URL}contact`
 				},
 				{
 					subCategory: 'Support',
-					subCategoryLink: '/contact'
+					subCategoryLink: `${import.meta.env.BASE_URL}contact`
 				},
 				{
 					subCategory: 'Join us',
-					subCategoryLink: '/contact'
+					subCategoryLink: `${import.meta.env.BASE_URL}contact`
 				}
 			]
 		}
