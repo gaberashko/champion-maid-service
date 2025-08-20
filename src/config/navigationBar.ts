@@ -33,7 +33,7 @@ export interface NavData {
 
 export const navigationBarData: NavData = {
 	logo: {
-		src: '/logo.svg',
+		src: `${import.meta.env.BASE_URL}logo.svg`,
 		alt: 'Champion Maid Service logo.',
 		text: 'Champion Maid Service'
 	},
