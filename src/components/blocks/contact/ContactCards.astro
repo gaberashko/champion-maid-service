@@ -39,7 +39,7 @@ const { classes } = Astro.props
 				subtitle="Keep your home tidy and welcoming with cleanings that fit your schedule. Weekly, bi-weekly, monthly — we’ll handle the chores so you can relax."
 				icon="house"
 				classes="text-center dark:!bg-neutral-800/50"
-				link="/contact"
+				link=`${import.meta.env.BASE_URL}contact`
 			/>
 		</Col>
 		<Col span="3">
@@ -48,7 +48,7 @@ const { classes } = Astro.props
 				subtitle="Ready for a fresh start? Our deep cleaning service takes care of the details, leaving every corner of your home sparkling clean."
 				icon="soap"
 				classes="text-center dark:!bg-neutral-800/50"
-				link="/contact"
+				link=`${import.meta.env.BASE_URL}contact`
 			/>
 		</Col>
 		<Col span="3">
@@ -57,7 +57,7 @@ const { classes } = Astro.props
 				subtitle="Moving is stressful enough without the cleaning. We’ll make sure your old place is spotless or your new one is ready to feel like home."
 				icon="open-box"
 				classes="text-center dark:!bg-neutral-800/50"
-				link="/contact"
+				link=`${import.meta.env.BASE_URL}contact`
 			/>
 		</Col>
 		<Col span="3" classes="flex flex-col gap-6">
@@ -66,7 +66,7 @@ const { classes } = Astro.props
 				subtitle="Have something specific in mind? From organizing to tackling tough spots, we’re flexible and happy to meet your needs."
 				icon="sparkles"
 				classes="text-center dark:!bg-neutral-800/50"
-				link="/contact"
+				link=`${import.meta.env.BASE_URL}contact`
 			/>
 		</Col>
 	</Row>
