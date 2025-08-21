@@ -30,8 +30,9 @@ type Props = {
 	disabled?: boolean
 	value?: string
 	classes?: string
+	placeholder?: string
 }
-const { id, label, iconName, iconPosition, helperText, required, disabled, value, classes } =
+const { id, label, iconName, iconPosition, helperText, required, disabled, value, classes, placeholder } =
 	Astro.props
 ---
 
@@ -51,7 +52,7 @@ const { id, label, iconName, iconPosition, helperText, required, disabled, value
 		required={required}
 		disabled={disabled}
 		value={value}
-		class="input__field peer"></textarea>
+		class="input__field peer pt-[8px]">{placeholder}</textarea>
 	<label
 		for={id}
 		class={`input__label ${iconPosition === 'lead' ? 'peer-placeholder-shown:left-10 peer-focus:left-2' : ''}`}

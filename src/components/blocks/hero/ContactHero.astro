@@ -10,6 +10,7 @@ import Row from '../../ui/Row.astro'
 import Col from '../../ui/Col.astro'
 // - UI
 import Form from '../contact/BasicForm.astro'
+import ContactNotif from '../contact/ContactNotif.astro'
 
 // Props
 type Props = {
@@ -17,8 +18,9 @@ type Props = {
 	title?: string
 	text?: string
 	classes?: string
+	submitted?: boolean
 }
-const { id, title, text, classes } = Astro.props
+const { id, title, text, classes, submitted } = Astro.props
 ---
 
 <Section id={id} classes={classes}>
@@ -30,7 +32,10 @@ const { id, title, text, classes } = Astro.props
 			</header>
 		</Col>
 		<Col span="6" classes="relative">
-			<Form classes="max-w-xl" />
+			{submitted ? (
+				<ContactNotif/>) : (
+				<Form classes="max-w-xl"/>)
+			}
 		</Col>
 	</Row>
 </Section>

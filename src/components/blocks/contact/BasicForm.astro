@@ -28,16 +28,23 @@ const { classes } = Astro.props
 		<Form action="https://formsubmit.co/8c3d2adbeebfdb4d5072a40015f579e4">
 			<h2 class="text-2xl">Get in Touch</h2>
 			<FormField>
-				<InputField type="text" id="firstName" label="First Name" />
-				<InputField type="text" id="lastName" label="Last Name" />
+				<!-- Honeypot -->
+				<input type="text" name="_honey" class="hidden">
+				<!-- Display Captcha -->
+				 <input type="hidden" name="_captcha" value="false">
+				 <!-- Relocation page -->
+				 <input type="hidden" name="_next" value={`${import.meta.env.BASE_URL}success`}>
+				
+				<InputField type="text" id="First&nbsp;Name" label="First Name" required value="John"/>
+				<InputField type="text" id="Last&nbsp;Name" label="Last Name" value="Doe"/>
 			</FormField>
 			<FormField>
-				<InputField type="email" id="email" label="Email" required value="name@youremail.com" />
+				<InputField type="email" id="Email" label="Email" required value="name@youremail.com" />
 			</FormField>
 			<FormField>
-				<InputField type="tel" id="phone" label="Phone Number" />
+				<InputField type="tel" id="Phone" label="Phone Number" />
 			</FormField>
-			<FormField><TextArea id="message" label="Your Message" /></FormField>
+			<FormField><TextArea id="Message" label="Your Message" placeholder="Your message here" required/></FormField>
 			<Button style="primary" type="submit">Submit</Button>
 		</Form>
 	</CardBody>

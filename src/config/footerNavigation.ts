@@ -48,10 +48,10 @@ export const footerNavigationData: FooterData = {
 		{
 			category: 'Product',
 			subCategories: [
-				{
+				/*{
 					subCategory: 'Features',
 					subCategoryLink: `${import.meta.env.BASE_URL}features`
-				},
+				},*/
 				{
 					subCategory: 'FAQ',
 					subCategoryLink: `${import.meta.env.BASE_URL}faq`

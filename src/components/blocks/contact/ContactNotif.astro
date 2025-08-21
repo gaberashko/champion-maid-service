@@ -1,0 +1,45 @@
+---
+// Contact Form Success Component
+// ------------
+// Description: A notification that displays over a contact form to indicate successful submission.
+// Properties:
+// - classes: Additional classes to be added to the Section
+
+// Components
+// - Layout
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+// - UI
+import Card from '../../ui/cards/partials/Card.astro'
+import CardBody from '../../ui/cards/partials/CardBody.astro'
+
+type Props = {
+	id?: string
+	title?: string
+	text?: string
+	classes?: string
+}
+
+const { id, title, text, classes } = Astro.props;
+---
+
+<Card classes="!bg-green-200">
+    <CardBody>
+        <Row>
+            <Col span="12">
+                <h4>Your message was <strong>delivered</strong></h4>
+                <p>Thank you for the message! <br>Your message has been successfully delivered,
+                    and we will reach out to you soon.</p>
+            </Col>
+        </Row>
+    </CardBody>
+</Card>
+
+<style>
+    .contact__card {
+        @apply bg-green-300
+    }
+</style>
+
+
+
