@@ -39,9 +39,9 @@ const savedNavActions = navActions.map((action) => ({
 	<div class="header__container">
 		<nav aria-label="main navigation" role="navigation" class="header__nav">
 			<!-- Logo -->
-			<a href={`${import.meta.env.BASE_URL}`} class="header__logo">
-				<img src={logo.src} alt={logo.alt} width="48" height="48" />
-				<span>{logo.text}</span>
+			<a href={`${import.meta.env.BASE_URL}`} class="header__logo" draggable="false">
+				<img src={logo.src} alt={logo.alt} width="48" height="48" draggable="false"/>
+				<span class="truncate">{logo.text}</span>
 			</a>
 
 			<!-- Menu toggle -->
@@ -125,13 +125,13 @@ const savedNavActions = navActions.map((action) => ({
 		@apply block h-full w-full bg-white/90 lg:backdrop-blur-sm dark:bg-neutral-900/90;
 	}
 	.header__container {
-		@apply container relative mx-auto px-6;
+		@apply container relative mx-auto px-1;
 	}
 	.header__logo {
 		@apply flex flex-auto items-center gap-2 whitespace-nowrap py-3 font-headings text-2xl font-black tracking-wider focus:outline-none;
 	}
 	.header__nav {
-		@apply flex h-[5.5rem] items-stretch gap-6 font-medium text-neutral-700 lg:justify-between dark:text-neutral-50;
+		@apply flex h-[5.5rem] items-stretch font-medium text-neutral-700 lg:justify-between dark:text-neutral-50;
 	}
 	.header__menu {
 		@apply invisible absolute left-0 top-0 z-[-1] ml-auto h-dvh w-full justify-center overflow-hidden overflow-y-auto overscroll-contain bg-white/90 px-8 py-[6rem] font-medium opacity-0 transition-[opacity,visibility] duration-300 lg:visible lg:relative lg:top-0 lg:z-0 lg:flex lg:h-full lg:w-auto lg:items-stretch lg:overflow-visible lg:bg-white/0 lg:px-0 lg:py-0 lg:pt-0 lg:opacity-100 dark:bg-neutral-900/90 dark:lg:bg-transparent;
