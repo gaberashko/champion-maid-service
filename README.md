@@ -1,7 +1,7 @@
 # Champion Maid Service Website
 
 This is the official website for **Champion Maid Service**, built with [Astro](https://astro.build/) and [TailwindCSS](https://tailwindcss.com/).  
-The site is deployed at: [https://gaberashko.github.io/champion-maid-service](https://gaberashko.github.io/champion-maid-service)
+The site is deployed at: [https://gaberashko.github.io/champion-maid-service](https://gaberashko.github.io/champion-maid-service).
 
 ---
 
