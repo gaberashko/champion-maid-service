@@ -7,8 +7,8 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-    site: "https://gaberashko.github.io/champion-maid-service/",
-    base: "/champion-maid-service/",
+    site: "https://championmaidservice.com",
+    base: "",
     integrations: [
         tailwind(),
         icon(),
