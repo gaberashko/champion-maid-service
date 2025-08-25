@@ -25,15 +25,19 @@ const { classes } = Astro.props
 
 <Card classes={classes}>
 	<CardBody>
-		<Form action="https://formsubmit.co/8c3d2adbeebfdb4d5072a40015f579e4">
+		<Form action="https://formsubmit.co/championmaidservice@gmail.com">
 			<h2 class="text-2xl">Get in Touch</h2>
 			<FormField>
 				<!-- Honeypot -->
 				<input type="text" name="_honey" class="hidden">
 				<!-- Display Captcha -->
 				 <input type="hidden" name="_captcha" value="false">
-				 <!-- Relocation page -->
-				 <input type="hidden" name="_next" value="https://gaberashko.github.io/champion-maid-service/success/">
+				<!-- Configure email output -->
+				 <input type="hidden" name="_template" value="table">
+				<!-- CC email -->
+				 <input type="hidden" name="_cc" value="gabrielrashko02@gmail.com">
+				<!-- Relocation page -->
+				<input type="hidden" name="_next" value="https://gaberashko.github.io/champion-maid-service/success/">
 				
 				<InputField type="text" id="First&nbsp;Name" label="First Name" required value="John"/>
 				<InputField type="text" id="Last&nbsp;Name" label="Last Name" value="Doe"/>
