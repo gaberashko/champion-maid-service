@@ -29,11 +29,12 @@ const { id, title, text, classes, submitted } = Astro.props
 			<header class="max-w-xl">
 				<h1 set:html={title} />
 				<p class="text-lg leading-relaxed">{text}</p>
-				<br><br>
+				<br>
 				<p>Prefer to reach us directly? Call us at
-					<a href="tel:7163823545" class="text-primary font-semibold">(716) 382-3545</a> 
+					<a rel="noopener" href="tel:7163823545" class="text-primary font-semibold">(716) 382-3545</a> 
 					or email us at 
-					<a href="mailto:championmaidservice@gmail.com" class="text-primary font-semibold">championmaidservice@gmail.com</a>.
+					<a rel="noopener" href="mailto:championmaidservice%40gmail.com?subject=Cleaning%20Inquiry" 
+					class="text-primary font-semibold">championmaidservice@gmail.com</a>.
 				</p>
 			</header>
 		</Col>

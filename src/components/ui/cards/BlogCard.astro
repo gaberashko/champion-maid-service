@@ -42,7 +42,7 @@ const {
 	{image && <Image src={image} alt={title} width={600} height={400} />}
 	<CardBody>
 		<h3 class="post-title">
-			<a href={link}>{title}</a>
+			<a rel="noopener" href={link}>{title}</a>
 		</h3>
 		<h4 class="post-subtitle">{subtitle}</h4>
 		<slot />

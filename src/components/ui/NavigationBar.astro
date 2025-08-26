@@ -39,7 +39,7 @@ const savedNavActions = navActions.map((action) => ({
 	<div class="header__container">
 		<nav aria-label="main navigation" role="navigation" class="header__nav">
 			<!-- Logo -->
-			<a href={`${import.meta.env.BASE_URL}`} class="header__logo" draggable="false">
+			<a rel="noopener" href={`${import.meta.env.BASE_URL}`} class="header__logo" draggable="false">
 				<img src={logo.src} alt={logo.alt} width="48" height="48" draggable="false"/>
 				<span class="truncate">{logo.text}</span>
 			</a>
