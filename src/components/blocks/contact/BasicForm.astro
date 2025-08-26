@@ -29,26 +29,39 @@ const { classes } = Astro.props
 			<h2 class="text-2xl">Get in Touch</h2>
 			<FormField>
 				<!-- Honeypot -->
-				<input type="text" name="_honey" class="hidden">
+				<input type="text" name="_honey" class="hidden" />
 				<!-- Display Captcha -->
-				 <input type="hidden" name="_captcha" value="false">
+				<input type="hidden" name="_captcha" value="false" />
 				<!-- Configure email output -->
-				 <input type="hidden" name="_template" value="table">
+				<input type="hidden" name="_template" value="table" />
 				<!-- CC email -->
-				 <input type="hidden" name="_cc" value="championmaidservice@gmail.com">
+				<input type="hidden" name="_cc" value="championmaidservice@gmail.com" />
 				<!-- Relocation page -->
-				<input type="hidden" name="_next" value="championmaidservice.com/success/">
-				
-				<InputField type="text" id="First&nbsp;Name" label="First Name" required value="John"/>
-				<InputField type="text" id="Last&nbsp;Name" label="Last Name" value="Doe"/>
+				<input type="hidden" name="_next" value="/success" />
+
+				<InputField type="text" id="First Name" label="First Name" required value="John" />
+				<InputField type="text" id="Last Name" label="Last Name" value="Doe" />
 			</FormField>
 			<FormField>
-				<InputField type="email" id="Email" label="Email" required value="name@youremail.com" />
+				<InputField
+					type="email"
+					id="Email"
+					label="Email"
+					required
+					value="name@youremail.com"
+				/>
 			</FormField>
 			<FormField>
 				<InputField type="tel" id="Phone" label="Phone Number" />
 			</FormField>
-			<FormField><TextArea id="Message" label="Your Message" placeholder="Your message here" required/></FormField>
+			<FormField
+				><TextArea
+					id="Message"
+					label="Your Message"
+					placeholder="Your message here"
+					required
+				/></FormField
+			>
 			<Button style="primary" type="submit">Submit</Button>
 		</Form>
 	</CardBody>
