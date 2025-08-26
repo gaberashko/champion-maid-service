@@ -13,7 +13,7 @@
 	},
 	{
 		"question": "Do you offer a free estimate?",
-		"reply": "Yes, we provide free, no-obligation estimates for both residential and commercial cleaning services. Our team will assess your space and give you a transparent quote.",
+		"reply": "Yes, we provide free, no-obligation estimates for both residential and commercial cleaning services. We will assess your space and give you a transparent quote.",
 		"category": "pricing",
 		"open": false
 	},
@@ -25,7 +25,7 @@
 	},
 	{
 		"question": "Do you offer refunds?",
-		"reply": "We offer a 30-day money-back guarantee if you are not satisfied with our service. Simply contact our support team within 30 days of your purchase, and we'll process your refund.",
+		"reply": "Because cleaning is a service, we do not provide refunds. However, if you are not satisfied with the results, we will gladly re-assess and re-clean the areas of concern at no additional cost to ensure your satisfaction.",
 		"category": "pricing",
 		"open": false
 	},
@@ -49,7 +49,7 @@
 	},
 	{
 		"question": "Do you clean both homes and businesses?",
-		"reply": "Yes, whether it’s your cozy living room or a busy office, we’ve got you covered. Our team is trained for both residential and commercial spaces.",
+		"reply": "Yes, whether it’s your cozy living room or a busy office, we’ve got you covered. We are accommodating for both residential and commercial spaces.",
 		"category": "general",
 		"open": false
 	},
