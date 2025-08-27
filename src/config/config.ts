@@ -27,7 +27,7 @@ export const configData: Config = {
 		'Champion Cleaning WNY is a new local cleaning solution in Western New York offering services from deep cleaning to standard cleans for commercial operations.',
 	ogImage: '/og.jpg',
 	logo: {
-		src: '/logo.svg',
+		src: '/favicon.svg',
 		alt: 'Champion Cleaning WNY logo'
 	},
 	canonical: true,
