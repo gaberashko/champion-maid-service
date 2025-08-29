@@ -3,27 +3,25 @@
 // - Layout
 import Layout from '../layouts/Layout.astro'
 // - UI
-import Feature from '../components/blocks/features/FeatureSticky.astro'
 import Hero from '../components/blocks/hero/PageHeader.astro'
-import CTA from '../components/blocks/CTA/BasicDark.astro'
 import SidebarContent from '../components/blocks/basic/StickySidebar.astro'
 import ImageCarousel from '../components/blocks/basic/ImageCarousel.astro'
 
 // Data
 import featuresData from '../data/json-files/featuresData.json'
 // - Feature Categories
-const featuresFactors = featuresData.filter((feature) => feature.category === 'Factors')
+/*const featuresFactors = featuresData.filter((feature) => feature.category === 'Factors')
 const featuresProductivity = featuresData.filter((feature) => feature.category === 'Productivity')
 const featuresSecurity = featuresData.filter((feature) => feature.category === 'Security')
 const featuresIntegrations = featuresData.filter((feature) => feature.category === 'Integrations')
-const featuresSupport = featuresData.filter((feature) => feature.category === 'Support')
+const featuresSupport = featuresData.filter((feature) => feature.category === 'Support')*/
 
 // Content
 // - SEO
 const SEO = {
-	title: 'Champion Maid Service | A Local Team With a Passion for Clean',
+	title: 'About Champion Maid Service | Buffalo House Cleaning Experts',
 	description:
-		"Champion Maid Service believes a clean space is the foundation of a better life. We take pride in serving the Western New york community with integrity, reliability, and attention to detail. Request an estimate today!"
+		"Learn about Champion Maid Service, the trusted provider of house cleaning and residential cleaning services in Buffalo NY. Our professional team delivers reliable, affordable cleaning for homes and apartments."
 }
 // - Page Header
 const header = {
@@ -68,10 +66,4 @@ const header = {
 			<ImageCarousel/>
 		</div>
 	</SidebarContent>
-	<!--<Feature
-		title="Insightful Analytics"
-		text="Delve into your data with precision and uncover actionable insights."
-		data={featuresFactors}
-	/>-->
-	<!--<CTA />-->
 </Layout>

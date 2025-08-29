@@ -6,7 +6,6 @@ import Layout from '../layouts/Layout.astro'
 import Hero from '../components/blocks/hero/PageHeader.astro'
 import FAQ from '../components/blocks/FAQ/FaqSticky.astro'
 import TextImage from '../components/blocks/basic/TextImage.astro'
-import CTA from '../components/blocks/CTA/BasicDark.astro'
 
 // Data
 import faqData from '../data/json-files/faqData.json'
@@ -18,14 +17,14 @@ const faqGeneral = faqData.filter((faq) => faq.category === 'general')
 import faqImage1 from '../assets/faq/faq-01.jpg'
 // - SEO
 const SEO = {
-	title: 'Champion Maid Service | Frequently Asked Questions',
+	title: 'Buffalo House Cleaning FAQ | Champion Maid Service',
 	description:
-		'Find answers to all your questions about our residential and commercial cleaning services, pricing, scheduling, and more. Learn how Champion Maid Service can make your home or business sparkle with ease.'
+		'Answers to common questions about house cleaning and residential cleaning in Buffalo NY. Learn about services, pricing, deep cleaning, maid services, and more from Champion Maid Service.'
 }
 // - Page Header
 const header = {
-	title: '<strong>Frequently Asked</strong> Questions.',
-	text: 'Find answers to your common questions about Champion Maid Service '
+	title: '<strong>House Cleaning FAQ</strong> in Buffalo NY',
+	text: 'Your top questions about Champion Maid Service answered, from pricing and deep cleaning to maid services and scheduling.'
 }
 ---
 
@@ -33,7 +32,7 @@ const header = {
 	<Hero title={header.title} text={header.text} />
 	<FAQ
 		title="Services Made Simple"
-		text="Learn more about how Champion Maid Service works, what we can do for you, and how we make keeping your space spotless, and as stress-free as possible!"
+		text="Get clear answers about our Buffalo house cleaning, maid services, deep cleaning, and more. We make booking simple, reliable, and tailored to your needs."
 		data={faqGeneral}
 	/>
 	<FAQ
@@ -50,5 +49,4 @@ const header = {
 		offsetImage
 		classes="bg-neutral-50 dark:bg-neutral-900"
 	/>
-	<!--<CTA />-->
 </Layout>

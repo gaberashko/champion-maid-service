@@ -4,19 +4,15 @@
 import Layout from '../layouts/Layout.astro'
 // - UI
 import Hero from '../components/blocks/hero/PricingHero.astro'
-import Price from '../components/blocks/pricing/PricingColumns.astro'
-import SocialProof from '../components/blocks/socialproof/Basic.astro'
 import FAQ from '../components/blocks/FAQ/Basic.astro'
-import Testimonial from '../components/blocks/testimonials/BasicDark.astro'
 import Feature from '../components/blocks/features/FeatureList.astro'
-import CTA from '../components/blocks/CTA/BasicLight.astro'
 
 // Content
 // - SEO
 const SEO = {
-	title: 'Champion Maid Service | Our Clean Prices',
+	title: 'Buffalo House Cleaning Pricing | Champion Maid Service',
 	description:
-		'Explore Champion Maid Service’s affordable cleaning packages for residential and commercial properties in WNY. Choose the plan that fits your needs and schedule with confidence.'
+		'See affordable pricing for house cleaning, residential cleaning, and maid services in Buffalo NY. Champion Maid Service offers professional, reliable cleaning for homes and apartments.'
 }
 // - Page Header
 const header = {
@@ -24,13 +20,13 @@ const header = {
 	text: 'Every home is unique, and so is your price. Let’s find the plan that fits you best.'
 }
 // - Testimonial data
-import testimonialBackground from '../assets/testimonial-bg-02.webp'
+/*import testimonialBackground from '../assets/testimonial-bg-02.webp'
 const testimonialData = {
 	blockquote:
 		"Foxi isn't just an app—it's like having a mischievous yet brilliant sidekick for your business. It streamlines tasks and also cracks jokes to keep spirits high",
 	figcaption: 'Max Widgetson',
 	cite: ' CEO, Widgetify Ltd'
-}
+}*/
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
@@ -47,5 +43,4 @@ const testimonialData = {
 		cite={testimonialData.cite}
 	/>-->
 	<FAQ classes="bg-slate-50 dark:bg-neutral-900/40" />
-	<!--<CTA />-->
 </Layout>

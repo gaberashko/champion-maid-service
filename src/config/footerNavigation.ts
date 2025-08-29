@@ -37,10 +37,10 @@ export const footerNavigationData: FooterData = {
 	footerAbout: {
 		title: 'Champion Maid Service',
 		aboutText:
-			'Champion Maid Service is a locally owned cleaning company serving Western New York. We take pride in delivering reliable, friendly, and professional cleaning services that make your home sparkle and your life a little easier.',
+			'Champion Maid Service is a trusted house cleaning and maid service in Buffalo, NY and across Western New York. We specialize in residential cleaning, deep cleaning, move in/out cleaning, and commercial office cleaning with reliable, friendly, and professional service you can count on.',
 		logo: {
 			src: `${import.meta.env.BASE_URL}logo.svg`,
-			alt: 'The tailwind astro theme',
+			alt: 'Champion Maid Service logo – Buffalo NY Cleaning Company',
 			text: 'Champion Maid Service'
 		}
 	},
