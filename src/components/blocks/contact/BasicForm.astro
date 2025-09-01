@@ -14,13 +14,58 @@ import Form from '../../ui/forms/Form.astro'
 import FormField from '../../ui/forms/partials/FormField.astro'
 import InputField from '../../ui/forms/form-elements/InputField.astro'
 import TextArea from '../../ui/forms/form-elements/TextArea.astro'
+import RadioGroup from '../../ui/forms/form-elements/RadioGroup.astro'
 import Button from '../../ui/Button.astro'
+
+type RadioOption = {
+	name:string,
+	group:string
+}
+
+const frequencyGroup: RadioOption[] = [
+    {
+        name: "Once",
+		group: "Frequency"
+    },
+    {
+        name: "Weekly",
+		group: "Frequency"
+    },
+    {
+        name: "Bi-weekly",
+		group: "Frequency"
+    },
+    {
+        name: "Monthly",
+		group: "Frequency"
+    },
+]
+
+const serviceGroup : RadioOption[] = [
+	{
+		name: "Standard",
+		group: "Cleaning Type"
+	},
+	{
+		name: "Deep",
+		group: "Cleaning Type"
+	},
+	{
+		name: "Move-in/out",
+		group: "Cleaning Type"
+	},
+	{
+		name: "Commercial",
+		group: "Cleaning Type"
+	},
+];
 
 // Props
 type Props = {
 	classes?: string
 }
-const { classes } = Astro.props
+
+const { classes } = Astro.props;
 ---
 
 <Card classes={classes}>
@@ -54,12 +99,25 @@ const { classes } = Astro.props
 			<FormField>
 				<InputField type="tel" id="Phone" label="Phone Number" />
 			</FormField>
+			<FormField>
+				<InputField type="range" rangeUnit="Bedroom" id="Bedroom" label="How many bedrooms should be cleaned?" value="2" min="0" max="6" step="0.5"/>
+			</FormField>
+			<FormField>
+				<InputField type="range" rangeUnit="Bathroom" id="Bathroom" label="How many bathrooms should be cleaned?" value="1" min="0" max="6" step="1"/>
+			</FormField>
+			<FormField>
+				<InputField type="range" rangeUnit="Sqft" id="Sqft" label="How large is the property?" value="2200" min="100" max="10000" step="100"/>
+			</FormField>
+			<FormField>
+				<RadioGroup id="Cleaning Frequency" label="Frequency of cleaning" data={frequencyGroup}/>
+			</FormField>
+			<FormField>
+				<RadioGroup id="Cleaning Type" label="Type of cleaning" data={serviceGroup}/>
+			</FormField>
 			<FormField
 				><TextArea
-					id="Message"
-					label="Your Message"
-					placeholder="Your message here"
-					required
+					id="Additional Notes"
+					label="Additional Notes"
 				/></FormField
 			>
 			<Button style="primary" type="submit">Submit</Button>

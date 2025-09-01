@@ -12,6 +12,9 @@
 // - required: Whether the input field is required
 // - disabled: Whether the input field is disabled
 // - value: The value of the input field
+// - min: The value of the min field (range inputs)
+// - max: The value of the max field (range inputs)
+// - step: The value of the step field (range inputs)
 // - classes: Additional classes to be added to the input field
 
 // Reference: https://wind-ui.com/components/form-elements/input-groups/
@@ -23,7 +26,7 @@ import { Icon } from 'astro-icon/components'
 // Props
 type Props = {
 	id: string
-	type?: 'text' | 'email' | 'password' | 'tel'
+	type?: 'text' | 'email' | 'password' | 'tel' | 'range' | 'radio'
 	label: string
 	iconName?: string
 	iconPosition?: 'lead' | 'trail'
@@ -31,6 +34,10 @@ type Props = {
 	required?: boolean
 	disabled?: boolean
 	value?: string
+	rangeUnit?: string
+	min?: string
+	max?: string
+	step?: string
 	classes?: string
 }
 const {
@@ -43,7 +50,11 @@ const {
 	required,
 	disabled,
 	value,
-	classes
+	classes,
+	min,
+	max,
+	step,
+	rangeUnit
 } = Astro.props
 ---
 
@@ -54,6 +65,7 @@ const {
 		,
 		{ [`${classes}`]: classes }
 	]}
+	data-value={value ?? min ?? 0}
 >
 	<input
 		id={id}
@@ -64,6 +76,11 @@ const {
 		disabled={disabled}
 		value={value}
 		class="input__field peer"
+		min={type === "range" ? min : undefined}
+		max={type === "range" ? max : undefined}
+		step={type === "range" ? step : undefined}
+		onclick={type === "range" ? `this.closest('.input').querySelector('.input__counter').dataset.value=this.value` : undefined}
+		oninput={type === "range" ? `this.closest('.input').querySelector('.input__counter').dataset.value=this.value` : undefined}
 	/>
 	<label
 		for={id}
@@ -79,6 +96,9 @@ const {
 			</small>
 		)
 	}
+	{
+	type === "range" ? (
+	<p class="input__counter" data-value={value ?? min ?? 0} data-unit={rangeUnit}></p>) : ("")}
 </div>
 
 <style>
@@ -102,5 +122,8 @@ const {
 	}
 	.input--icon-trail {
 		@apply [&_.input\_\_field]:!pr-12 [&_.input\_\_icon]:right-4;
+	}
+	.input__counter::before {
+		content:attr(data-value) " " attr(data-unit);
 	}
 </style>

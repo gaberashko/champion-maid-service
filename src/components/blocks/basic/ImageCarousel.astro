@@ -1,4 +1,8 @@
 ---
+// Image Carousel
+// ------------
+// Description: An image carousel with preloaded images and glide functionality.
+
 import "@glidejs/glide/dist/css/glide.core.min.css";
 import "@glidejs/glide/dist/css/glide.theme.min.css";
 
@@ -63,7 +67,7 @@ const images = [
         },
       });
       glide.mount();
-      el.dataset.glideMounted = "true"; // prevent double init
+      el.dataset.glideMounted = "true"; // Prevent double init
     }
   }
 
