@@ -1,9 +1,15 @@
 [
 	{
+		"question": "What payment methods are accepted?",
+		"reply": "We accept cash, check, or Zelle. Payment is due at the time of service, and your prompt payment helps us keep everything running smoothly.",
+		"category": "pricing",
+		"open": true
+	},
+	{
 		"question": "What is the cost of a standard home cleaning?",
 		"reply": "Pricing for a standard home cleaning varies depending on the size of the home and specific cleaning needs. We provide personalized estimates to ensure accurate pricing. Please reach out to request a free quote for your home.",
 		"category": "pricing",
-		"open": true
+		"open": false
 	},
 	{
 		"question": "Are there any discounts for recurring services?",
@@ -63,36 +69,6 @@
 		"question": "How often can you come?",
 		"reply": "We can clean as often as you’d like: weekly, biweekly, monthly, or just for special occasions. Your schedule is entirely your choice.",
 		"category": "general",
-		"open": false
-	},
-	{
-		"question": "What are the main features of Foxi?",
-		"reply": "Foxi includes in-app messaging, project management, time tracking, customizable dashboards, and more. These features are designed to help you stay organized, communicate effectively, and manage your time efficiently.",
-		"category": "features",
-		"open": true
-	},
-	{
-		"question": "How do I use the in-app messaging feature?",
-		"reply": "In-app messaging allows you to communicate with your team directly within Foxi. Simply navigate to the messaging tab to start a conversation. You can send messages, share files, and create group chats.",
-		"category": "features",
-		"open": false
-	},
-	{
-		"question": "Can I customize my dashboard?",
-		"reply": "Yes, you can customize your dashboard by adding, removing, and rearranging widgets to fit your workflow. This customization helps you keep important information at your fingertips.",
-		"category": "features",
-		"open": false
-	},
-	{
-		"question": "How does the time tracking feature work?",
-		"reply": "Time tracking allows you to log the time spent on tasks and projects. Start the timer when you begin a task and stop it when you're done. You can also manually log time if needed.",
-		"category": "features",
-		"open": false
-	},
-	{
-		"question": "Is there a mobile app for Foxi?",
-		"reply": "Yes, Foxi is available on both iOS and Android, allowing you to manage your tasks and projects on the go. Download the app from the App Store or Google Play to stay productive anywhere.",
-		"category": "features",
 		"open": false
 	}
 ]
