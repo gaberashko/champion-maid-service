@@ -70,7 +70,7 @@ const { classes } = Astro.props;
 
 <Card classes={classes}>
 	<CardBody>
-		<Form action="https://formsubmit.co/a5e5932bea94bb740249dbd8bdb5ab5f">
+		<Form method="post" action="https://formsubmit.co/a5e5932bea94bb740249dbd8bdb5ab5f">
 			<h2 class="text-2xl">Get in Touch</h2>
 			<FormField>
 				<!-- Honeypot -->
@@ -82,7 +82,7 @@ const { classes } = Astro.props;
 				<!-- CC email -->
 				<input type="hidden" name="_cc" value="championmaidservice@gmail.com" />
 				<!-- Relocation page -->
-				<input type="hidden" name="_next" value="/success" />
+				<input type="hidden" name="_next" value="https://championmaidservice.com/success" />
 
 				<InputField type="text" id="First Name" label="First Name" required value="John" />
 				<InputField type="text" id="Last Name" label="Last Name" value="Doe" />
